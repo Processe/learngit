@@ -1,2 +1,3 @@
 import os
-aa = 'tast'
+aa = 'test'
+bb = 'my test'
