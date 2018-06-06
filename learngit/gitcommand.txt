@@ -1,0 +1,36 @@
+1.安装git：sudo apt-get install git（Linux）/Windows版的Git， 从http://msysgit.github.io/下载， 然后按默认选项安装
+2.设置用户名：git config --global user.name "Your Name"
+3.设置email：git config --global user.email "email@example.com"
+4.建立仓库：git init
+5.把文件添加到仓库：git add 文件名
+6.把文件提交到仓库：git commit -m "标记说明"
+7.查看仓库状态：git status
+8.对比库文件：git diff 文件名
+9.历史记录：git log
+10.退出log 英文状态按q
+11.把记录显示为一行：git log --pretty=oneline
+12.回退到上一版本：git reset --hard HEAD^  上上个版本HEAD^^  网上数一百个版本HEAD~100
+13.切换到制定版本：git hard --hard commit_ID(前七位代码)
+14.查看命令记录：git reflog
+15.工作区（work directory）：文件夹就是一个工作区
+16.版本库（repository）：.git 是git的版本库
+17.暂存区：stage
+18.默认分支：master，指向master的一个指针叫HEAD
+19.查看工作区和版本库的区别：git diff HEAD -- 文件名
+20.撤销修改：git checkout -- 文件名
+21.撤销暂存区的修改：git reset HEAD file
+22.从版本库删除文件：git rm 文件名
+23.创建SSH Key：$ ssh-keygen -t rsa -C "邮箱"
+24.SSH Key的秘钥秘钥： 用户/.shh/id_rsa.pub(公匙)
+25.登录GitHub账号设置GitHub SSH Key
+26.首次把本地仓库推送到GitHub上去： 
+	(1)$ git remote add origin git@github.com:账户名/learngit.git
+	(2)$ $ git push -u origin master   /由于远程库是空的， 我们第一次推送 master 分支时， 加上了 -u 参数
+27.master 分支的最新修改推送至GitHub：  $ git push origin master
+28.克隆一个本地库：$ git clone HTTPS/SHH
+29.创建并切换dev分支：$ git checkout -b dev   /git checkout 命令加上 -b 参数表示创建并切换
+30.创建分支dev：git branch dev
+31.切换到dev分支：$ git checkout dev
+32.查看当前分支：git branch     /git branch 命令会列出所有分支， 当前分支前面会标一个 * 号
+33.把dev 分支的工作成果合并到 master 分支上： git merge dev
+
