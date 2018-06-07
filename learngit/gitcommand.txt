@@ -36,4 +36,6 @@
 34.查看当前分支：git branch     /git branch 命令会列出所有分支， 当前分支前面会标一个 * 号
 35.把dev 分支的工作成果合并到 master 分支上： git merge dev
 36.删除 dev 分支：git branch -d dev
+37.的方式发生
+
 
